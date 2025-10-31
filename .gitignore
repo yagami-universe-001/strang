@@ -1,0 +1,162 @@
+# Environment Variables
+.env
+*.env
+.env.local
+
+# Pyrogram Session Files
+*.session
+*.session-journal
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Bot Files
+downloads/
+encoded/
+thumbnails/
+logs/
+*.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary Files
+temp/
+tmp/
+*.tmp
+*.bak
+*.cache
+
+# Docker
+.dockerignore
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Media Files (optional - uncomment if needed)
+# *.mp4
+# *.mkv
+# *.avi
+# *.mov
+# *.flv
+# *.wmv
+# *.webm
+# *.m4v
+# *.mp3
+# *.wav
+# *.flac
+# *.srt
+# *.ass
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
+# *.webp
+
+# Config Files (if you want to keep them private)
+# config.py
+
+# Test Files
+test/
+tests/
+test_*.py
+*_test.py
+
+# Coverage Reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath
+*.sage.py
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Rope
+.ropeproject
+
+# mkdocs
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# pytype
+.pytype/
+
+# Cython
+cython_debug/
