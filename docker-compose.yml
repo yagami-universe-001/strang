@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: encoder_mongodb
+    restart: always
+    environment:
+      - MONGO_INITDB_DATABASE=video_encoder_bot
+    volumes:
+      - mongodb_data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - encoder_network
+
+  bot:
+    build: .
+    container_name: video_encoder_bot
+    restart: always
+    env_file:
+      - .env
+    depends_on:
+      - mongodb
+    volumes:
+      - ./downloads:/app/downloads
+      - ./encoded:/app/encoded
+      - ./thumbnails:/app/thumbnails
+      - ./logs:/app/logs
+    networks:
+      - encoder_network
+
+volumes:
+  mongodb_data:
+
+networks:
+  encoder_network:
+    driver: bridge
